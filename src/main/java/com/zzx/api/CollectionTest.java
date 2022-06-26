@@ -1,9 +1,6 @@
 package main.java.com.zzx.api;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Java11 集合增强
@@ -27,6 +24,16 @@ public class CollectionTest {
         var set1 = new HashSet<String>();
         var copy4 = List.copyOf(set1);
         System.out.println(set1 == copy4); // false
+
+
+        var map = Map.of("Java", 1, "Python", 2, "C", 3);
+        var copy5 = Map.copyOf(map);
+        System.out.println(map == copy5); // true
+
+        var map1 = new HashMap<String, Integer>();
+        var copy6 = Map.copyOf(map1);
+        System.out.println(map1 == copy6); // false
+
 
     }
 }
