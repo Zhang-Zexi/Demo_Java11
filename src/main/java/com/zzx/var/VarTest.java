@@ -3,6 +3,10 @@ package main.java.com.zzx.var;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ *  var定义局部变量
+ */
 public class VarTest {
 
     public static void main(String[] args) {
@@ -14,7 +18,7 @@ public class VarTest {
         var a4 = "zzx";
         System.out.println(a3);
         System.out.println(a4);
-        List a5 = new ArrayList<>();
+        List a5 = new ArrayList<String>();
         a5.add("1");
         a5.add("2");
         var a6 = a5;
